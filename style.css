@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik';
+}
+
+
+
+body {
+    font-size: 16px;
+    font-family: 'Rubik';
+    background-color: hsl(270, 20%, 96%);
+}
+
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0;
+}
+
+
+.phone {
+    width: 300px;
+    padding: 3%;
+    border-radius: 20px;
+    background: white;
+    
+}
+
+
+
+.header {
+    background: linear-gradient(90deg, hsl(264, 100%, 61%),hsl(293, 100%, 63%));
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px 20px 0 0;
+    color: white;
+}
+
+
+.camera {
+    background: white;
+    height: 20px;
+    width: 50%;
+    margin: auto;
+    border-radius: 0 0 15px 15px;
+}
+
+
+.user img {
+    width: 25px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.profile i {
+    font-size: 10px;
+}
+
+
+.name h5 {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+.name h6 {
+    margin-top: 2px;
+    font-weight: 100;
+    color: hsl(270, 20%, 96%, 0.5);
+    font-size: 10px;
+    word-spacing: 2px;
+}
+
+
+
+.three-dots {
+    font-size: 12px;
+    font-weight: 100;
+}
+
+
+.chat {
+    background: hsl(270, 20%, 96%);
+    padding: 12px;
+    border-radius: 0 0 20px 20px;
+}
+
+
+
+.sent {
+    background: hsl(276, 55%, 52%, 0.1);
+    width: 55%;
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+
+.sent p {
+    font-size: 9px;
+    color: hsl(276, 55%, 52%);
+}
+
+
+.dog {
+    display: flex;
+    gap: 10px;
+    margin: 0 0 12px 88px;
+}
+
+
+
+.dog img {
+    width: 45px;
+    border-radius: 10px;
+}
+
+
+.received {
+    background: white;
+    width: 55%;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 0 0 12px 110px;
+}
+
+
+
+.received p {
+    font-size: 9px;
+    
+}
+
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    width: 70%;
+    padding: 7px 20px 7px 7px;
+    border-radius: 12px 12px 12px 0;
+    margin-bottom: 8px;
+}
+
+
+.price h4 {
+    color: white;
+    font-size: 14px;
+}
+
+
+.minutes {
+    display: flex;
+    align-items: center;
+}
+
+
+.minutes i {
+    color: hsl(0, 0%, 100%, 0.4);
+    font-size: 12px;
+    margin-right: 8px;
+}
+
+
+
+.minutes span {
+    color: hsl(0, 0%, 100%, 0.6);
+    font-size: 8px;
+    word-spacing: 1.5px;
+}
+
+
+
+.text-area {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 30px;
+    margin-top: 15px;
+}
+
+
+
+.text-area p {
+    font-size: 10px;
+    color: hsl(271, 36%, 24%, 0.4);
+    margin-left: 10px
+}
+
+
+.text-area i {
+    font-size: 24px;
+}
+
+
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+
+
+.text h1 {
+    color: hsl(271, 36%, 24%);
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+
+.text p {
+    text-align: center;
+    width: 80%;
+    font-size: 18px;
+    color: hsl(271, 36%, 24%, 0.5);
+    line-height: 28px;
+}
+
+
+
+.purple {
+    width: 50%;
+    background: linear-gradient(90deg, hsl(264, 100%, 61%),hsl(293, 100%, 63%));
+    height: 90vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0 0 1600px 0;
+}
+
+
+
+
+@media screen and (min-width: 900px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    
+    .phone {
+        width: 300px;
+        padding: 0.5%;
+    }
+
+
+    .text {
+        width: 35%;
+        text-align: left;
+        align-items: flex-start;
+        margin-left: 50px;
+        padding-left: 80px;
+    }
+
+
+    .purple {
+        width: 400px;
+        border-radius: 0 0 1600px 1600px;
+        height: 100vh;
+    }
+
+
+    .text p {
+        text-align: left;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+{}
